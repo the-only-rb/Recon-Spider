@@ -31,17 +31,17 @@ setup(
     version="1.0.7",
     description="Most Advanced OSINT Framework",
     url="https://github.com/bhavsec/reconspider/",
-    author="BhavKaran (bhavsec.com)",
-    author_email="bhavsec@gmail.com",
+    author="the-only-rb",
+    author_email="email170512@gmail.com",
     license="GPL-3.0",
-    install_requires=["shodan", "requests", "prompt_toolkit","wget","beautifulsoup4","click","urllib3","IP2proxy","wget","paramiko","h8mail","nmap","pythonping","whois","gmplot","pillow","lxml","tweepy"],
+    install_requires=["shodan", "requests", "prompt_toolkit","wget","beautifulsoup4","click","urllib3","IP2proxy","wget","paramiko","h8mail","nmap","pythonping","whois","gmplot","pillow","lxml","tweepy", "colorama"],
     console=["reconspider.py"],
 )
 
 try:
     import wget
 except Exception as e:
-    print(e)
+    print(e) 
     pip.main(['install','wget'])
     import wget
 
